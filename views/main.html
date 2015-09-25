@@ -1,8 +1,11 @@
+<div ng-controller="MainCtrl">
 <div class="header">
   <h3 class="text-muted">chatty</h3>
 </div>
 
 <h4>Latest Chats:</h4>
 <div class="jumbotron">
-
+	<form ng-submit="addMessages()"><input ng-model="addMessage"></input></form>
+	<div ng-repeat="message in messages">{{message}}</div>
+</div>
 </div>
